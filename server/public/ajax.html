@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+  <meta name="renderer" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="CSS/Main.css">
+  <meta name="author" content="">
+  <meta name="keyword" content="">
+  <meta name="description" content="">
+  <title>Title</title>
+</head>
+<style>
+  * {
+    padding: 0;
+    margin: 0;
+  }
+</style>
+<body>
+<script src="javascripts/jq.js"></script>
+
+
+<div class="wrapper">
+
+</div>
+
+
+<script>
+  $.ajax({
+    url:'/ajax',
+    type:'GET',
+    async:true,
+    data:{
+      name:'yang',age:25
+    },
+    timeout:5000,
+    dataType:'json',
+    beforeSend:function(xhr){
+      console.log(xhr)
+      console.log('发送前')
+    },
+    success:function(data,textStatus,jqXHR){
+      console.log(data)
+      console.log(textStatus)
+      console.log(jqXHR)
+    }
+  })
+</script>
+
+
+
+
+</body>
+</html>
