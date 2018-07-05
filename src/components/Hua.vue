@@ -40,27 +40,27 @@ export default{
     }
   },
   watch: {
-  	text: (nv,ov)=>{  
+  	text: (nv,ov)=>{
   		console.log(ov)
-  	}	
+  	}
   },
   created(){
-  	console.log(this)
-  	console.log('create')
+  	//console.log(this)
+  	//console.log('create')
   },
   beforeCreate(){
-  	console.log('beforeCreate')
-  	console.log(this)
+  	//console.log('beforeCreate')
+  	//console.log(this)
   },
   mounted(){
-	 console.log('mounted')
+	 //console.log('mounted')
 	 this.$data.text = "api_huahua"
   },
   beforeMount(){
-  	console.log('before--mount')
+  	//console.log('before--mount')
   },
   activated(){
-	  console.log('激活')
+	  //console.log('激活')
 	  this.$data.text = "api_huahua"
   }
 }

@@ -4,17 +4,25 @@
     <h2>Essential Links</h2>
     <div v-show="show1">hahahahahah</div>
     <div v-if="show2">hahahahahah</div>
+    <div v-my-directive=""></div>
+    <div>
+      {{money | money}}
+    </div>
     <router-link to="/hua">Go to hua</router-link>
   </div>
 </template>
 <script>
+const data = Object.freeze(require( "../data/list")) // 提升性能
+console.log(data)
 export default {
   name: 'HelloWorld',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App',
       show1: 0,
-      show2: 1
+      show2: 1,
+      text: "hello huahua",
+      money: 222
     }
   }
 }
