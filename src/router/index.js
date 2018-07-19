@@ -17,7 +17,11 @@ const router = new Router({
       path: '/hua',
       name: 'Hua',
       component: Hua,
-      meta: {keepAlive: true} // 缓存组件·
+      meta: {keepAlive: true}, // 缓存组件·
+      children: [
+        { path: '/index', name: 'userIndex', component: userIndex, meta: {auth: true}},// return /index 
+        { path: 'index', name: 'userIndex', component: userIndex, meta: {auth: true}}, // return /hua/index
+      ]
     }
   ]
 })

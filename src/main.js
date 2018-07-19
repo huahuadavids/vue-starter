@@ -8,6 +8,9 @@ import store from './vuex/store'
 import './filter'
 import './directive'
 
+const ROOT = process.env.API_ROOT;
+
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
