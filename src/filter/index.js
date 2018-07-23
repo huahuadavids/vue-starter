@@ -1,8 +1,10 @@
-import filters from "./filters"
-import Vue from "vue"
+import money from "./money"
+import pm from "./parser"
+const filters = {
+  pm,
+  money 
+}
 
-Object.keys(filters).forEach(function(filterName){
-  Vue.filter(filterName,filters[filterName])
-});
 
+export default filters;
 

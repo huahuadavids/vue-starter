@@ -1,14 +1,9 @@
-/**
- * @author huahuadavids
- * @description all the directive.js
- *
- */
-const directives = {
+
   /**
    *@description
    *@demo <div id="hook-arguments-example" v-demo:foo.a.b="message"></div>
    */
-  'my-directive': {
+  export default {
     bind(el, binding, vnode) {
       const s = JSON.stringify
       const str =
@@ -35,7 +30,3 @@ const directives = {
   }
 
 
-};
-
-
-export default directives;

@@ -1,6 +1,12 @@
-import directives from "./directives"
-import Vue from 'vue'
+/**
+ * @author huahuadavids
+ * @description all the directive.js
+ *
+ */
+import myDir from "./dir1"
+const directives = {
+   myDir
+};
 
-Object.keys(directives).forEach(function(directiveName){
-  Vue.directive(directiveName,directives[directiveName])
-})
+
+export default directives;

@@ -4,7 +4,7 @@
     <h2>Essential Links</h2>
     <div v-show="show1">hahahahahah</div>
     <div v-if="show2">hahahahahah</div>
-    <div v-my-directive=""></div>
+    <div myDir=""></div>
     <div>
       {{money | money}}
     </div>

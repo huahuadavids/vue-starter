@@ -19,7 +19,7 @@ import demo from './demo'
 export default{
   name: 'hua',
   components: {
-    demo
+    demo: demo 
   },
   data () {
     return {

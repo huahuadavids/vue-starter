@@ -4,9 +4,9 @@ import App from './App'
 import router from './router'
 import store from './vuex/store'
 
-import './filter'
-import './directive'
-
+import './filter/init'
+import './directive/init'
+import "./components/global/init"
 const ROOT = process.env.API_ROOT;
 
 Vue.config.productionTip = false
