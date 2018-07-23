@@ -6,7 +6,7 @@
     <div v-if="show2">hahahahahah</div>
     <div myDir=""></div>
     <div>
-      {{money | money}}
+      {{moneys | money}}
     </div>
     <router-link to="/hua">Go to hua</router-link>
   </div>
@@ -24,6 +24,11 @@ export default {
       text: "hello huahua",
       money: 222
     }
+  },
+  computed: {
+      moneys(){
+        return this.money * 0.5;
+      }
   }
 }
 </script>
