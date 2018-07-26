@@ -9,6 +9,12 @@
       {{moneys | money}}
     </div>
     <router-link to="/hua">Go to hua</router-link>
+    <!--
+    <router-link
+      :to="{ name: 'cash', query: { type: item.currency }}" >
+      {{$t('withdrawal')}}
+    </router-link>
+    --> 
   </div>
 </template>
 <script>
