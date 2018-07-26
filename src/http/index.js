@@ -1,7 +1,7 @@
 import axios from "axios"
 axios.defaults.baseURL = 'https://api.example.com';
 axios.defaults.headers.common['Authorization'] = AUTH_TOKEN;
-axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
+axios.defaults.headers.post['Content-Type'] = 'application/x-www-form.js-urlencoded';
 
 // 添加请求拦截器
 axios.interceptors.request.use(function (config) {

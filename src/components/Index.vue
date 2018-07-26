@@ -14,7 +14,7 @@
       :to="{ name: 'cash', query: { type: item.currency }}" >
       {{$t('withdrawal')}}
     </router-link>
-    --> 
+    -->
   </div>
 </template>
 <script>
