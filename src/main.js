@@ -7,6 +7,7 @@ import store from './vuex/store'
 import './filter/init'
 import './directive/init'
 import "./components/global/init"
+
 const ROOT = process.env.API_ROOT;
 
 Vue.config.productionTip = false
